@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: lightseagreen;
+    color:white;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-section{
+    height:auto;
+}
+
+.form-header{
+    height:10vh;
+    background-color: dodgerblue;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formBox{
+    display: none;
+}
