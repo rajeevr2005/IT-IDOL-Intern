@@ -2,9 +2,23 @@
 let formBox = document.getElementById("formBox");
 
 
-function formDetail() {
-    formBox.style.display = "block";    //form display
+// Open form
+function formDetail(event) {
+    formBox.style.display = "block";
+    event.stopPropagation(); // click ko document tak nahi jane dete
 }
+
+// Close form if clicked outside
+document.addEventListener("click", function(event) {
+    if (!formBox.contains(event.target)) {
+        formBox.style.display = "none";
+    }
+});
+
+// Prevent form clicks from closing it
+formBox.addEventListener("click", function(event) {
+    event.stopPropagation();
+});
 
 // Initialize DataTable
 let table = $('#userTable').DataTable();
@@ -88,3 +102,4 @@ function addUser() {
     // Reset form
     document.querySelector("form").reset();
 }
+
