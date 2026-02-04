@@ -1,0 +1,33 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.outerDiv{
+    min-height: 100vh;
+    background-color: pink;
+}
+
+.card{
+    width:600px;
+}
+
+.card input{
+    padding-left: 5px !important;
+}
+
+.submitBtn{
+    background-color: black;
+    border-radius: 10px;
+    color:white;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+@media(max-width:642px){
+    .card{
+        width:100%;
+    }
+}

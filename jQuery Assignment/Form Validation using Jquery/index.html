@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Validation Using Jquery</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div
+            class="container-fluid d-flex justify-content-center align-items-center outerDiv">
+
+            <form>
+                <div class="card  px-3  pt-3 ">
+
+                    <h1 class="text-center bg-warning mt-3">Register</h1>
+                    <label class="form-label ">Name</label>
+                    <input type="text" placeholder="Name" id="name"
+                        class="form-control mb-1">
+                    <p id="nameError" class="text-danger"></p>    
+
+                    <label class="form-label">Roll No.</label>
+                    <input type="text" placeholder="Roll No." id="roll"
+                        class="form-control mb-1">
+                    <p id="RollError" class="text-danger"></p>    
+
+                    <label class="form-label">DOB</label> 
+                    <input type="date" placeholder="DOB" id="dob"
+                        class="form-control mb-1">
+                     <p id="DOBError" class="text-danger"></p>   
+
+                    <label class="form-label">Email</label>
+                    <input type="email" placeholder="Email" id="email"
+                        class="form-control mb-1">
+                    <p id="emailError" class="text-danger"></p>
+
+                    <label class="form-label">Password</label>
+                    <input type="password" placeholder="Password" id="password"
+                        class="form-control mb-1">
+                    <p id="passwordError" class="text-danger"></p>
+
+                    <label class="form-label">Re-Enter Password</label>
+                    <input type="password" placeholder="Type Password again" id="rePassword"
+                        class="form-control mb-1">
+                    <p id="rePassError" class="text-danger"></p>
+
+                    <input type="button" value="Submit" class="mb-3 submitBtn" 
+                        onclick="validateForm()" >
+
+                </div>
+            </form>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="first.js"></script>
+
+    </body>
+</html>
